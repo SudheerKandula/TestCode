@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "837923578214",
+    "firebase_url": "https://justmaths-334d1.firebaseio.com",
+    "project_id": "justmaths-334d1",
+    "storage_bucket": "justmaths-334d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837923578214:android:e645680902696f9c",
+        "android_client_info": {
+          "package_name": "com.codeclub.JustMaths"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837923578214-pv3ef7hmh2s9mj73kq15noup5ito8i2b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codeclub.JustMaths",
+            "certificate_hash": "917f1e1546c9daef2855da222227de8af78466a9"
+          }
+        },
+        {
+          "client_id": "837923578214-m5g0l06jgv1tn566mmlqn8thgaesn5gh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbw_yyFCjHP0Zm7iiWRgbwJyKaox-w5uQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837923578214-m5g0l06jgv1tn566mmlqn8thgaesn5gh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
