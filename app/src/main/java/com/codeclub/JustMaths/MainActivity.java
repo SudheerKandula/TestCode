@@ -111,6 +111,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
+                                Intent i = new Intent(MainActivity.this, HomepageActivity.class);
+                                startActivity(i);
+                                Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                                 Toast.makeText(MainActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                             }else{
                                 Toast.makeText(MainActivity.this, "Failed to Register", Toast.LENGTH_SHORT).show();
