@@ -1,5 +1,20 @@
 
-isquid:UselessImportCheck"@Remove this unused import 'android.icu.text.LocaleDisplayNames'.(Ø›ø¼þÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Éå…Ç8Ó‹±·-
+Msquid:S1068-"/Remove this unused "firebaseApp" private field.(Çãü…8Ó‹±·-
+\"squid:SwitchLastCaseIsDefaultCheckh""Add a default case to this switch.(×ö³–úÿÿÿÿ8óÁŽˆ·-
+psquid:UselessImportCheck
+"@Remove this unused import 'android.support.annotation.Nullable'.(Ö‹øïüÿÿÿÿ8”Ô½ˆ·-
+jsquid:UselessImportCheck"@Remove this unused import 'com.google.firebase.auth.AuthResult'.(âÂ8âò†‰·-
+@squid:S2386%"Make this member "protected".(ÎÅÃ¶ýÿÿÿÿ8ìÏ²‰·-
+nsquid:S1301h"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ8óÁŽˆ·-
+xsquid:S1450+"URemove the "select" field and declare it as a local variable in the relevant methods.(®ùç¶þÿÿÿÿ8Æ±î‡·-
+isquid:UselessImportCheck"@Remove this unused import 'android.icu.text.LocaleDisplayNames'.(Ø›ø¼þÿÿÿÿ
+Usquid:S1444%"2Make this "public static myUsersArray" field final(ÎÅÃ¶ýÿÿÿÿ8ú­“·-
+Nsquid:UselessImportCheck"Remove this duplicated import.(ÝÄðöûÿÿÿÿ8âò†‰·-
+tsquid:UselessImportCheck"PRemove this unused import 'com.google.android.gms.common.api.GoogleApiActivity'.(ÞßìŒ
+Nsquid:S1068,"0Remove this unused "firebaseAuth" private field.(Ž“ø8õ–¸Œ·-
 rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö¬›º
-tsquid:UselessImportCheck"PRemove this unused import 'com.google.android.gms.common.api.GoogleApiActivity'.(ÞßìŒ
-]squid:UselessImportCheck"4Remove this unused import 'android.widget.TextView'.(„Ë‚ˆÿÿÿÿÿ
+’"squid:ClassVariableVisibilityCheck%"XMake myUsersArray a static final constant or non-public and provide accessors if needed.(ÎÅÃ¶ýÿÿÿÿ8ú­“·-
+Gsquid:S1148¥"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Ù­ˆ·-
+\squid:UnusedPrivateMethodr"0Remove this unused private "getAllUsers" method.(†Ä±Ñ8ÔÇÃ·-
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Þ‰8ÔÇÃ·-

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E29E63"
+    android:background="@drawable/background"
     android:orientation="horizontal"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
@@ -36,20 +36,32 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="REACH HOME SAFE"
+        android:text="FollowMi"
+        android:textStyle="bold"
         android:textColor="@color/colorAccent"
-        android:textSize="30sp"
+        android:textSize="35sp"
         android:id="@+id/gthm"
         android:layout_centerHorizontal="true" />
+
     <ImageView
         android:id="@+id/walk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/gthm"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="4dp"
         android:src="@drawable/baseline_directions_run_white_36dp"
-        android:tint="@color/colorPrimaryDark"
-        />
+        android:tint="@color/colorPrimaryDark" />
+    <ImageView
+        android:id="@+id/curarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gthm"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/curvedarrow"
+        android:tint="@color/colorPrimaryDark"/>
+
 
     <!--<ImageView-->
         <!--android:id="@+id/walk"-->
@@ -73,23 +85,43 @@
     <EditText
         android:layout_margin="15dp"
         android:id="@+id/editTextName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/editTextPassword"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="7dp"
+        android:paddingLeft="5dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:textAlignment="gravity"
-        android:hint="email" />
+        android:hint="Enter email id" />
 
     <EditText
         android:layout_margin="15dp"
         android:id="@+id/editTextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="7dp"
+        android:layout_above="@id/editTextPhone"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:textAlignment="gravity" />
+
+    <EditText
+        android:layout_margin="15dp"
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/phone1"
+        android:drawablePadding="7dp"
+        android:paddingLeft="5dp"
         android:layout_above="@id/buttonLogin"
         android:ems="10"
-        android:hint="password"
-        android:inputType="textPassword"
+        android:hint="Enter phone number"
+        android:inputType="phone"
         android:textAlignment="gravity" />
 
 

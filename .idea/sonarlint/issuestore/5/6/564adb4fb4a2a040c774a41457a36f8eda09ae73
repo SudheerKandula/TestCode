@@ -1,12 +1,12 @@
 
-‚squid:S1450J"kRemove the "mFusedLocationProviderClient" field and declare it as a local variable in the relevant methods.(¾àŸ£
-V"squid:SwitchLastCaseIsDefaultCheck›""Add a default case to this switch.(×ö³–úÿÿÿÿ
-Jsquid:S1199œ"-Extract this nested code block into a method.(»ÎÏÿÿÿÿÿ
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö¬›º
-Nsquid:S1068C"8Remove this unused "PLACE_PICKER_REQUEST" private field.(¬Å0
-Nsquid:S1068D"2Remove this unused "LAT_LNG_BOUNDS" private field.(Ãìßÿÿÿÿÿ
-squid:S4165 "xRemove this useless assignment; "mLocationPermissionGranted" already holds the assigned value along all execution paths.(ıÆ·
-gsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(««›×ÿÿÿÿÿ
 hsquid:S1301›"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ
-asquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(®±}
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö¬›º
+‚squid:S1450J"kRemove the "mFusedLocationProviderClient" field and declare it as a local variable in the relevant methods.(¾àŸ£
 bsquid:CommentedOutCodeLine7"<This block of commented-out lines of code should be removed.(Àı†‹
+Nsquid:S1068C"8Remove this unused "PLACE_PICKER_REQUEST" private field.(¬Å0
+asquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(®±}
+Nsquid:S1068D"2Remove this unused "LAT_LNG_BOUNDS" private field.(Ãìßÿÿÿÿÿ
+Jsquid:S1199œ"-Extract this nested code block into a method.(»ÎÏÿÿÿÿÿ
+gsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(««›×ÿÿÿÿÿ
+V"squid:SwitchLastCaseIsDefaultCheck›""Add a default case to this switch.(×ö³–úÿÿÿÿ
+squid:S4165 "xRemove this useless assignment; "mLocationPermissionGranted" already holds the assigned value along all execution paths.(ıÆ·

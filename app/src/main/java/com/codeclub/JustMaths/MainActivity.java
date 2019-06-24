@@ -15,6 +15,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import org.w3c.dom.Text;
 
 //import android.app.Dialog;
 //import android.os.Handler;
@@ -27,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button buttonLogin;
     private EditText editTextName;
     private EditText editTextPassword;
+    private EditText editTextPhone;
     private FirebaseAuth firebaseAuth;
     private FirebaseApp firebaseApp;
 //    private ProgressBar mprogressBar;
@@ -48,11 +53,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonLogin = (Button) findViewById(R.id.buttonLogin);
         editTextName = (EditText) findViewById(R.id.editTextName);
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
+        editTextPhone = (EditText) findViewById(R.id.editTextPhone);
 
         buttonRegister.setOnClickListener(MainActivity.this);
         buttonLogin.setOnClickListener(MainActivity.this);
     }
-//        new Thread(new Runnable() {
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        if(firebaseAuth.getCurrentUser() != null){
+            //Handle the already login user
+        }
+    }
+    //        new Thread(new Runnable() {
 //            @Override
 //            public void run() {
 //                while (mprogressStatus < 100){
@@ -94,6 +109,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         private void registerUser(){
             String name = editTextName.getText().toString().trim();
             String password = editTextPassword.getText().toString().trim();
+            final String phone = editTextPhone.getText().toString().trim();
+
 
             if(TextUtils.isEmpty(name)){
                 Toast.makeText(this, "Please enter name", Toast.LENGTH_SHORT).show();
@@ -105,16 +122,62 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return;
             }
 
+            if(TextUtils.isEmpty(phone)){
+                Toast.makeText(this, "Please enter Phone number", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            if(TextUtils.getTrimmedLength(phone) != 10){
+                Toast.makeText(this, "Please valid Phone number", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
 
             firebaseAuth.createUserWithEmailAndPassword(name,password)
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
-                                Intent i = new Intent(MainActivity.this, HomepageActivity.class);
-                                startActivity(i);
-                                Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                                 Toast.makeText(MainActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
+
+                                System.out.println(phone);
+
+
+                                User user = new User(
+                                        phone
+                                );
+
+//                                DatabaseReference xy = FirebaseDatabase.getInstance().getReference("newfolder").push();
+//                                if(xy == null){
+//                                    System.out.println("firebase ref is null");
+//                                }
+                                String op = FirebaseAuth.getInstance().getCurrentUser().getUid();
+                                System.out.println(op);
+
+
+//                                FirebaseDatabase database = FirebaseDatabase.getInstance();
+//                                DatabaseReference myRef = database.getReference("message");
+//                                System.out.println(myRef.getParent());
+//                                myRef.setValue("Hello, World!");
+//                                System.out.println("stop");
+                                FirebaseDatabase.getInstance().getReference("Users")
+                                 .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                        .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if(task.isSuccessful()){
+                                            Toast.makeText(MainActivity.this, "Phone number added", Toast.LENGTH_LONG).show();
+                                        } else{
+                                            Toast.makeText(MainActivity.this, "Failed Phone number addition", Toast.LENGTH_LONG).show();
+                                        }
+                                    }
+                                });
+
+//
+//                                Intent i = new Intent(MainActivity.this, HomepageActivity.class);
+//                                startActivity(i);
+//                                Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+
                             }else{
                                 Toast.makeText(MainActivity.this, "Failed to Register", Toast.LENGTH_SHORT).show();
                             }
