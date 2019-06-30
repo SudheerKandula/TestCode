@@ -15,10 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
-import org.w3c.dom.Text;
 
 //import android.app.Dialog;
 //import android.os.Handler;
@@ -107,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //        });
 
         private void registerUser(){
-            String name = editTextName.getText().toString().trim();
+            final String name = editTextName.getText().toString().trim();
             String password = editTextPassword.getText().toString().trim();
             final String phone = editTextPhone.getText().toString().trim();
 
@@ -142,10 +139,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                                 System.out.println(phone);
 
+                                //insert some default data
+                                User user = new User();
+                                user.setName(name.substring(0, name.indexOf("@")));
+                                user.setUser_id(FirebaseAuth.getInstance().getCurrentUser().getUid());
+                                user.setPhone(phone);
 
-                                User user = new User(
-                                        phone
-                                );
+
+//                                User user = new User(
+//                                        phone
+//                                );
 
 //                                DatabaseReference xy = FirebaseDatabase.getInstance().getReference("newfolder").push();
 //                                if(xy == null){

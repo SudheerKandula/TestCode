@@ -1,30 +1,32 @@
 
-jsquid:CommentedOutCodeLine–"<This block of commented-out lines of code should be removed.(ž£˜ì8®¹ùúµ-
-gsquid:CommentedOutCodeLineU"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ
-hsquid:CommentedOutCodeLine¼"<This block of commented-out lines of code should be removed.(åë¤Ýÿÿÿÿÿ
-gsquid:CommentedOutCodeLineN"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ
-csquid:CommentedOutCodeLineÉ"<This block of commented-out lines of code should be removed.(Ð´¥è
-jsquid:CommentedOutCodeLine±"<This block of commented-out lines of code should be removed.(„“Å8°ÀÏãµ-
-gsquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(¨ðú·ûÿÿÿÿ
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(äãÇ§ùÿÿÿÿ
-osquid:CommentedOutCodeLinež"<This block of commented-out lines of code should be removed.(ÁÀÍÉûÿÿÿÿ8é´¤ƒ¶-
-bsquid:CommentedOutCodeLine^"<This block of commented-out lines of code should be removed.(Ž®ƒ÷
-ysquid:S1450"]Remove the "buttonRegister" field and declare it as a local variable in the relevant methods.(š§•ýÿÿÿÿ
-hsquid:S1301õ"KReplace this "switch" statement by "if" statements to increase readability.(×“¾ñùÿÿÿÿ
-bsquid:CommentedOutCodeLineg"<This block of commented-out lines of code should be removed.(Ž®ƒ÷
-gsquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(¼–´¬ùÿÿÿÿ
-V"squid:SwitchLastCaseIsDefaultCheckõ""Add a default case to this switch.(×“¾ñùÿÿÿÿ
-bsquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(‚ˆ×
-csquid:CommentedOutCodeLineø"<This block of commented-out lines of code should be removed.(ú§ý
-psquid:S1450"ZRemove the "buttonLogin" field and declare it as a local variable in the relevant methods.(ñŽ±k
-V
-squid:S106›"9Replace this use of System.out or System.err by a logger.(§“‰q8˜˜´‚¶-
-csquid:CommentedOutCodeLineÅ"<This block of commented-out lines of code should be removed.(½üï»
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö¬›º
-csquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(Ž®ƒ÷
-gsquid:CommentedOutCodeLineH"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ
-csquid:CommentedOutCodeLineÎ"<This block of commented-out lines of code should be removed.(ä’ŒÖ
-bsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(ÌÒÿà
-csquid:CommentedOutCodeLine¾"<This block of commented-out lines of code should be removed.(Ž®ƒ÷
+gsquid:CommentedOutCodeLineR"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ
+bsquid:CommentedOutCodeLineC"<This block of commented-out lines of code should be removed.(ÌÒÿà
+bsquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(Ž®ƒ÷
+gsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(¨ðú·ûÿÿÿÿ
+jsquid:CommentedOutCodeLineÁ"<This block of commented-out lines of code should be removed.(Ž®ƒ÷8üŒÑý¹-
+gsquid:CommentedOutCodeLine."<This block of commented-out lines of code should be removed.(¼–´¬ùÿÿÿÿ
 \
-squid:S106"9Replace this use of System.out or System.err by a logger.(û…½Àþÿÿÿÿ8Š•úøµ-
+squid:S106Œ"9Replace this use of System.out or System.err by a logger.(û…½Àþÿÿÿÿ8Š•úøµ-
+gsquid:CommentedOutCodeLineE"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ
+jsquid:CommentedOutCodeLine™"<This block of commented-out lines of code should be removed.(ž£˜ì8üŒÑý¹-
+jsquid:CommentedOutCodeLineÈ"<This block of commented-out lines of code should be removed.(½üï»8üŒÑý¹-
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö¬›º
+gsquid:CommentedOutCodeLineK"<This block of commented-out lines of code should be removed.(áíüÈùÿÿÿÿ
+osquid:CommentedOutCodeLine¡"<This block of commented-out lines of code should be removed.(ÁÀÍÉûÿÿÿÿ8üŒÑý¹-
+osquid:CommentedOutCodeLine¿"<This block of commented-out lines of code should be removed.(åë¤Ýÿÿÿÿÿ8üŒÑý¹-
+bsquid:CommentedOutCodeLine["<This block of commented-out lines of code should be removed.(Ž®ƒ÷
+osquid:CommentedOutCodeLine—"<This block of commented-out lines of code should be removed.(¼è÷ïøÿÿÿÿ8üŒÑý¹-
+jsquid:CommentedOutCodeLineƒ"<This block of commented-out lines of code should be removed.(Ž®ƒ÷8üŒÑý¹-
+jsquid:CommentedOutCodeLine´"<This block of commented-out lines of code should be removed.(„“Å8üŒÑý¹-
+bsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(‚ˆ×
+osquid:S1301ø"KReplace this "switch" statement by "if" statements to increase readability.(×“¾ñùÿÿÿÿ8üŒÑý¹-
+V
+squid:S106ž"9Replace this use of System.out or System.err by a logger.(§“‰q8üŒÑý¹-
+jsquid:CommentedOutCodeLineÌ"<This block of commented-out lines of code should be removed.(Ð´¥è8üŒÑý¹-
+esquid:S3027"FPut single-quotes around '@' to use the faster "indexOf(char)" method.(ï™Ç8ë¶Úý¹-
+psquid:S1450"ZRemove the "buttonLogin" field and declare it as a local variable in the relevant methods.(ñŽ±k
+jsquid:CommentedOutCodeLineû"<This block of commented-out lines of code should be removed.(ú§ý8üŒÑý¹-
+jsquid:CommentedOutCodeLineÑ"<This block of commented-out lines of code should be removed.(ä’ŒÖ8üŒÑý¹-
+]"squid:SwitchLastCaseIsDefaultCheckø""Add a default case to this switch.(×“¾ñùÿÿÿÿ8üŒÑý¹-
+ysquid:S1450"]Remove the "buttonRegister" field and declare it as a local variable in the relevant methods.(š§•ýÿÿÿÿ
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(äãÇ§ùÿÿÿÿ

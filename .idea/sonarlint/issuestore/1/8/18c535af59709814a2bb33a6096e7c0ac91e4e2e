@@ -1,0 +1,5 @@
+
+\squid:S1155q">Use isEmpty() to check whether the collection is empty or not.(äÒÓ8çÍÏ¶-
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö¬›º
+ˆ"squid:ClassVariableVisibilityCheck"SMake checked a static final constant or non-public and provide accessors if needed.(½Õîø8çÍÏ¶-
+~squid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÇÜÇõúÿÿÿÿ8çÍÏ¶-

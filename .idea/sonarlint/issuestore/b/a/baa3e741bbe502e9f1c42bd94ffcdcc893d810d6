@@ -1,20 +1,61 @@
 
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Éå…Ç8Ó‹±·-
-Msquid:S1068-"/Remove this unused "firebaseApp" private field.(Çãü…8Ó‹±·-
-\"squid:SwitchLastCaseIsDefaultCheckh""Add a default case to this switch.(×ö³–úÿÿÿÿ8óÁŽˆ·-
-psquid:UselessImportCheck
-"@Remove this unused import 'android.support.annotation.Nullable'.(Ö‹øïüÿÿÿÿ8”Ô½ˆ·-
-jsquid:UselessImportCheck"@Remove this unused import 'com.google.firebase.auth.AuthResult'.(âÂ8âò†‰·-
-@squid:S2386%"Make this member "protected".(ÎÅÃ¶ýÿÿÿÿ8ìÏ²‰·-
-nsquid:S1301h"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ8óÁŽˆ·-
-xsquid:S1450+"URemove the "select" field and declare it as a local variable in the relevant methods.(®ùç¶þÿÿÿÿ8Æ±î‡·-
-isquid:UselessImportCheck"@Remove this unused import 'android.icu.text.LocaleDisplayNames'.(Ø›ø¼þÿÿÿÿ
-Usquid:S1444%"2Make this "public static myUsersArray" field final(ÎÅÃ¶ýÿÿÿÿ8ú­“·-
-Nsquid:UselessImportCheck"Remove this duplicated import.(ÝÄðöûÿÿÿÿ8âò†‰·-
-tsquid:UselessImportCheck"PRemove this unused import 'com.google.android.gms.common.api.GoogleApiActivity'.(ÞßìŒ
-Nsquid:S1068,"0Remove this unused "firebaseAuth" private field.(Ž“ø8õ–¸Œ·-
+osquid:CommentedOutCodeLine’"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ËŸ¨ö¸-
+jsquid:CommentedOutCodeLineþ"<This block of commented-out lines of code should be removed.(Åì¹À8¾†õó¹-
+osquid:CommentedOutCodeLineÀ"<This block of commented-out lines of code should be removed.(¿Ä³žùÿÿÿÿ8ÍõÂ¥º-
+nsquid:CommentedOutCodeLineX"<This block of commented-out lines of code should be removed.(‡‹Åºùÿÿÿÿ8Ÿ ìí¸-
+osquid:CommentedOutCodeLineÙ"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8‚Ë¶¥º-
+isquid:CommentedOutCodeLineº"<This block of commented-out lines of code should be removed.(ÝÉ¦8ÍõÂ¥º-
+jsquid:CommentedOutCodeLine¿"<This block of commented-out lines of code should be removed.(é¢Ç›8‡Úµ¥º-
+osquid:CommentedOutCodeLine¼"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8‡Úµ¥º-
+Osquid:S1068+"1Remove this unused "eventListener" private field.(üŽ‰Ó8å¦á„¸-
+wsquid:S2293R"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ÿýß®8Ÿ ìí¸-
+isquid:CommentedOutCodeLineÆ"<This block of commented-out lines of code should be removed.(¸¢÷w8‚Ë¶¥º-
+jsquid:CommentedOutCodeLine˜"<This block of commented-out lines of code should be removed.(ïÁžÑ8Ÿ ìí¸-
+xsquid:S1450("URemove the "select" field and declare it as a local variable in the relevant methods.(®ùç¶þÿÿÿÿ8Æ±î‡·-
+Msquid:S1068*"/Remove this unused "firebaseApp" private field.(Çãü…8Ó‹±·-
+dsquid:UnusedPrivateMethodn"8Remove this unused private "setSupportActionBar" method.(ÈÓŠŸ8üæö¸-
+osquid:CommentedOutCodeLineú"<This block of commented-out lines of code should be removed.(è€ºïúÿÿÿÿ8¾†õó¹-
+Gsquid:S1148³"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8¾†õó¹-
+osquid:S1301“"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ8Ÿ ìí¸-
+jsquid:CommentedOutCodeLine‹"<This block of commented-out lines of code should be removed.(¸­Õ÷8ËŸ¨ö¸-
+Lsquid:S1172n".Remove this unused method parameter "toolbar".(ÈÓŠŸ8ÖÉ­õ¸-
+Ksquid:S1444,"-Make this "public static myUsers" field final(‹µ‰Â8å¦á„¸-
+jsquid:CommentedOutCodeLineò"<This block of commented-out lines of code should be removed.(´ô¡Ó8ËŸ¨ö¸-
+osquid:CommentedOutCodeLine€"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ËŸ¨ö¸-
+Ÿsquid:S1186n"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÈÓŠŸ8ÖÉ­õ¸-
+]"squid:SwitchLastCaseIsDefaultCheck“""Add a default case to this switch.(×ö³–úÿÿÿÿ8Ÿ ìí¸-
+jsquid:CommentedOutCodeLineÏ"<This block of commented-out lines of code should be removed.(Ý­…Ê8‚Ë¶¥º-
+\
+squid:S106£"9Replace this use of System.out or System.err by a logger.(—€þ’þÿÿÿÿ8¾†õó¹-
+jsquid:CommentedOutCodeLineð"<This block of commented-out lines of code should be removed.(ôÞœÝ8ËŸ¨ö¸-
+Ÿsquid:S1186f"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Þ‰8Ÿ ìí¸-
+osquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(Ã¦ÀÁüÿÿÿÿ8‡Úµ¥º-
+squid:S1319,"rThe type of the "myUsers" object should be an interface such as "List" rather than the implementation "ArrayList".(‹µ‰Â8å¦á„¸-
+ˆ"squid:ClassVariableVisibilityCheck,"SMake myUsers a static final constant or non-public and provide accessors if needed.(‹µ‰Â8å¦á„¸-
+jsquid:CommentedOutCodeLineÑ"<This block of commented-out lines of code should be removed.(¡Õ±š8‚Ë¶¥º-
+jsquid:HiddenFieldCheckO"ARename "eventListener" which hides the field declared at line 43.(·ÄÍÔ8Ÿ ìí¸-
+isquid:CommentedOutCodeLine…"<This block of commented-out lines of code should be removed.(² S8¾†õó¹-
+osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ËŸ¨ö¸-
+nsquid:CommentedOutCodeLinea"<This block of commented-out lines of code should be removed.(œùôÛúÿÿÿÿ8Ÿ ìí¸-
+Nsquid:S1068)"0Remove this unused "firebaseAuth" private field.(Ž“ø8õ–¸Œ·-
+isquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(‹µ°)8…¦´¥º-
+osquid:CommentedOutCodeLineõ"<This block of commented-out lines of code should be removed.(Ûç’¦øÿÿÿÿ8ËŸ¨ö¸-
+osquid:CommentedOutCodeLine‰"<This block of commented-out lines of code should be removed.(¢¬ËÈúÿÿÿÿ8¾†õó¹-
+osquid:CommentedOutCodeLineü"<This block of commented-out lines of code should be removed.(©¹Ðæûÿÿÿÿ8¾†õó¹-
+osquid:CommentedOutCodeLineÉ"<This block of commented-out lines of code should be removed.(ŠÐ§«ýÿÿÿÿ8‚Ë¶¥º-
 rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö¬›º
-’"squid:ClassVariableVisibilityCheck%"XMake myUsersArray a static final constant or non-public and provide accessors if needed.(ÎÅÃ¶ýÿÿÿÿ8ú­“·-
-Gsquid:S1148¥"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8Ù­ˆ·-
-\squid:UnusedPrivateMethodr"0Remove this unused private "getAllUsers" method.(†Ä±Ñ8ÔÇÃ·-
-squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Þ‰8ÔÇÃ·-
+osquid:CommentedOutCodeLineÞ"<This block of commented-out lines of code should be removed.(ú»Ü›ûÿÿÿÿ8¾†õó¹-
+osquid:CommentedOutCodeLine÷"<This block of commented-out lines of code should be removed.(ß®ŸÍøÿÿÿÿ8ËŸ¨ö¸-
+jsquid:CommentedOutCodeLine—"<This block of commented-out lines of code should be removed.(Œï¡8¾†õó¹-
+;squid:S2386,"Make this member "protected".(‹µ‰Â8å¦á„¸-
+wsquid:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(‹µ‰Â8å¦á„¸-
+nsquid:CommentedOutCodeLinej"<This block of commented-out lines of code should be removed.(ª¹äÿÿÿÿÿ8Ÿ ìí¸-
+isquid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(¦›ìì8Ÿ ìí¸-
+osquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(è±øÿÿÿÿ8¾†õó¹-
+osquid:CommentedOutCodeLine¡"<This block of commented-out lines of code should be removed.(ŠâŒ¶øÿÿÿÿ8ÍõÂ¥º-
+osquid:CommentedOutCodeLineì"<This block of commented-out lines of code should be removed.(ÉÍ‹óûÿÿÿÿ8¾†õó¹-
+osquid:CommentedOutCodeLine¦"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ÍõÂ¥º-
+dsquid:S1854—"@Remove this useless assignment to local variable "contactsList".(Ð€Ì ûÿÿÿÿ8Ÿ ìí¸-
+osquid:CommentedOutCodeLine¬"<This block of commented-out lines of code should be removed.(÷µÇþÿÿÿÿ8ÍõÂ¥º-
+osquid:CommentedOutCodeLineË"<This block of commented-out lines of code should be removed.(Í›ƒøÿÿÿÿ8‚Ë¶¥º-
+jsquid:CommentedOutCodeLineç"<This block of commented-out lines of code should be removed.(³¿á•8ËŸ¨ö¸-

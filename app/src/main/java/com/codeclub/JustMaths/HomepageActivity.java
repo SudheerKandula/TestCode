@@ -1,39 +1,30 @@
 package com.codeclub.JustMaths;
 
-
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.database.Cursor;
-import android.icu.text.LocaleDisplayNames;
 import android.net.Uri;
-import android.provider.ContactsContract;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
-import com.google.android.gms.common.api.GoogleApiActivity;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.FirebaseApp;
-import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.net.SocketOption;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.EventListener;
 
 public class HomepageActivity extends AppCompatActivity {
 
@@ -48,10 +39,14 @@ public class HomepageActivity extends AppCompatActivity {
     private EventListener eventListener;
     public static ArrayList<String> myUsers = new ArrayList<String>();
 
+//    //firebase
+//    private FirebaseAuth.AuthStateListener mAuthListener;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+
 
         follower = findViewById(R.id.follower);
         select = findViewById(R.id.select);
@@ -65,6 +60,9 @@ public class HomepageActivity extends AppCompatActivity {
             }
         });
 
+        //as part of trail
+//        setupFirebaseAuth();
+
         if (isServicesOK()) {
             init();
         }
@@ -72,6 +70,7 @@ public class HomepageActivity extends AppCompatActivity {
         DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
 
         DatabaseReference usersdRef = rootRef.child("Users");
+
 
         ValueEventListener eventListener = new ValueEventListener() {
             @Override
@@ -82,7 +81,6 @@ public class HomepageActivity extends AppCompatActivity {
                     String userPhone = ds.child("phone").getValue(String.class);
 
                     Log.d("TAG", userPhone);
-//                    myUsers.add(userPhone);
                     myContacts.add(userPhone);
 
                 }
@@ -103,6 +101,9 @@ public class HomepageActivity extends AppCompatActivity {
 //        usersdRef.addListenerForSingleValueEvent(eventListener);
         usersdRef.addValueEventListener(eventListener);
     }
+
+//    private void setSupportActionBar(Toolbar toolbar) {
+//    }
 
     private void init() {
         Button btnMap = (Button) findViewById(R.id.btnMap);
@@ -151,7 +152,83 @@ public class HomepageActivity extends AppCompatActivity {
         }
     }
 
-//    public class UAT {
+//
+//    private void initFCM(){
+//        String token = FirebaseInstanceId.getInstance().getToken();
+//        Log.d(TAG, "initFCM: token: " + token);
+//        sendRegistrationToServer(token);
+//
+//    }
+//    public void openMessageDialog(String userId){
+//        System.out.println("Entered loop for userid is:"+ userId);
+//        Log.d(TAG, "openMessageDialog: opening a dialog to send a new message");
+//        MessageDialog2 dialog = new MessageDialog2();
+//
+//        Bundle bundle = new Bundle();
+//        bundle.putString(getString(R.string.intent_user_id), userId);
+//        dialog.setArguments(bundle);
+//        dialog.show(getSupportFragmentManager(), getString(R.string.dialog_message));
+//    }
+
+//    /**
+//     * Persist token to third-party servers.
+//     *
+//     * Modify this method to associate the user's FCM InstanceID token with any server-side account
+//     * maintained by your application.
+//     *
+//     * @param token The new token.
+//     */
+//    private void sendRegistrationToServer(String token) {
+//        Log.d(TAG, "sendRegistrationToServer: sending token to server: " + token);
+//        DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
+//        reference.child(getString(R.string.dbnode_users))
+//                .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+//                .child(getString(R.string.field_messaging_token))
+//                .setValue(token);
+//    }
+
+    /*
+       ----------------------------- Firebase setup ---------------------------------
+*/
+//    private void setupFirebaseAuth(){
+//        Log.d(TAG, "setupFirebaseAuth: started.");
+//
+//        mAuthListener = new FirebaseAuth.AuthStateListener() {
+//            @Override
+//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+//                FirebaseUser user = firebaseAuth.getCurrentUser();
+//                if (user != null) {
+//
+//                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+//
+//                } else {
+//                    Log.d(TAG, "onAuthStateChanged:signed_out");
+//                    Intent intent = new Intent(HomepageActivity.this, MainActivity.class);
+//                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//                    startActivity(intent);
+//                    finish();
+//                }
+//                // ...
+//            }
+//        };
+//    }
+
+//    @Override
+//    public void onBackPressed() {
+//        if (dl.isDrawerOpen(GravityCompat.START)) {
+//            dl.closeDrawer(GravityCompat.START);
+//        } else {
+//            super.onBackPressed();
+//        }
+//    }
+
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        return  abdt.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
+//    }
+
+
+    //    public class UAT {
 //    private void getUsers(String[] args) {
 //         final ArrayList<String> myUsers=new ArrayList<String>();
 //        //to fetch all the users of firebase Auth app
@@ -211,6 +288,10 @@ public class HomepageActivity extends AppCompatActivity {
             if (myUsers.contains(phoneNo)) {
                 follower.setText(phoneNo);
                 Toast.makeText(this, "Valid App User", Toast.LENGTH_SHORT).show();
+//                initFCM();
+//                String cuserid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+//                System.out.println("the current userid is:" + cuserid);
+//                openMessageDialog(cuserid);
             }
             else {
                 follower.setText("Invalid contact");
@@ -221,6 +302,78 @@ public class HomepageActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        FirebaseAuth.getInstance().addAuthStateListener(mAuthListener);
+//
+//    }
+//
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        if (mAuthListener != null) {
+//            FirebaseAuth.getInstance().removeAuthStateListener(mAuthListener);
+//        }
+//    }
+
+    //as part of new intent opening for userlist
+
+    /*
+    ----------------------------- Firebase setup ---------------------------------
+ */
+//    private void setupFirebaseAuth(){
+//        Log.d(TAG, "setupFirebaseAuth: started.");
+//
+//        mAuthListener = new FirebaseAuth.AuthStateListener() {
+//            @Override
+//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+//                FirebaseUser user = firebaseAuth.getCurrentUser();
+//                if (user != null) {
+//
+//                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+//                    Toast.makeText(HomepageActivity.this, "Authenticated with: " + user.getEmail(), Toast.LENGTH_SHORT).show();
+//
+//                    Intent intent = new Intent(HomepageActivity.this, UserListActivity.class);
+//                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//
+//                    //check for extras from FCM
+//                    if (getIntent().getExtras() != null) {
+//                        Log.d(TAG, "initFCM: found intent extras: " + getIntent().getExtras().toString());
+//                        for (String key : getIntent().getExtras().keySet()) {
+//                            Object value = getIntent().getExtras().get(key);
+//                            Log.d(TAG, "initFCM: Key: " + key + " Value: " + value);
+//                        }
+//                        String data = getIntent().getStringExtra("data");
+//                        Log.d(TAG, "initFCM: data: " + data);
+//                    }
+//                    startActivity(intent);
+//                    finish();
+//
+//
+//                } else {
+//                    // User is signed out
+//                    Log.d(TAG, "onAuthStateChanged:signed_out");
+//                }
+//                // ...
+//            }
+//        };
+//    }
+//
+//    @Override
+//    public void onStart() {
+//        super.onStart();
+//        FirebaseAuth.getInstance().addAuthStateListener(mAuthListener);
+//    }
+//
+//    @Override
+//    public void onStop() {
+//        super.onStop();
+//        if (mAuthListener != null) {
+//            FirebaseAuth.getInstance().removeAuthStateListener(mAuthListener);
+//        }
+//    }
 
 }
 
